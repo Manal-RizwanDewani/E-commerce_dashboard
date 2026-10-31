@@ -94,6 +94,7 @@ def load_default_data() -> tuple[pd.DataFrame | None, str | None]:
         ROOT / "E-commerce_sales_data.csv",
         ROOT / "ecommerce_sales.csv",
         ROOT / "sales_data.csv",
+        ROOT / "ecommerce_sales_data",
     ]
     candidates.extend(sorted(ROOT.glob("*.csv")))
     candidates.extend(sorted((ROOT / "streamlit" / "data").glob("*.csv")))
